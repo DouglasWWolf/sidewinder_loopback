@@ -1,0 +1,23 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-366,-280",
+   "DisplayTieOff":"1",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port clk_100mhz -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port port-id_pb_rst_n -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace portBus peripheral_reset -pg 1 -lvl 3 -x 670 -y 140 -defaultsOSRD
+preplace portBus clk_100mhz_out -pg 1 -lvl 3 -x 670 -y 40 -defaultsOSRD
+preplace inst system_reset_100mhz -pg 1 -lvl 2 -x 470 -y 140 -defaultsOSRD
+preplace inst clock_buffer_100mhz -pg 1 -lvl 1 -x 150 -y 60 -defaultsOSRD
+preplace netloc clock_buffer_100mhz_IBUF_OUT 1 1 2 280 40 NJ
+preplace netloc pb_rst_n_1 1 0 2 NJ 120 NJ
+preplace netloc system_reset_100mhz_peripheral_reset 1 2 1 NJ 140
+preplace netloc Conn1 1 0 1 NJ 60
+levelinfo -pg 1 0 150 470 670
+pagesize -pg 1 -db -bbox -sgen -140 0 870 240
+"
+}
+
